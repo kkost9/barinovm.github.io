@@ -1,0 +1,63 @@
+.addfile {
+	width: 330px;
+	font-family: "Baloo Chettan 2", cursive;
+	
+	background-color: transparent;
+	transition: all 0.5s ease 0s;
+	overflow: auto;
+
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+
+	box-sizing: border-box;
+
+	max-height: 0;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+.addfile.active {
+	max-height: 400px;
+}
+
+.chat.active {
+	filter: contrast(120%);
+}
+
+.addfile__list {
+	width: 100%;
+	margin: 0 0 10px 0;
+	padding: 0;
+	
+	border-radius: 15px;
+	overflow: hidden;
+	box-sizing: border-box;
+
+}
+
+.addfile__row {
+	
+	padding: 10px;
+	
+	background-color: #202f42;
+	
+	text-align: center;
+	border-bottom: 1px solid black;
+	
+	box-sizing: border-box;
+}
+
+.addfile__row:first-child,
+.addfile__row:last-child {
+	border: none;
+}
+
+.addfile__row:hover {
+	background-color: black;
+}
+
+.addfile__link {
+	text-decoration: none;
+	color: #3895d2;
+}
